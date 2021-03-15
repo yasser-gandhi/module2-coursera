@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    width: 100%;
+}
+
+/****************Responsive for Desktop*****************/
+    @media (min-width:992px){
+
+    .col-1-desktop{
+        float: left;
+    }
+    .col-1-desktop{
+        width: 33.33%;
+    }
+}
+
+
+/****************Responsive for Tablet*****************/
+@media (min-width: 768px) and (max-width:991px){
+    .col-1-tablet, .col-2-tablet{
+        float: left;
+    }
+    .col-1-tablet {
+        width: 50%;
+    }
+    .col-2-tablet {
+        width: 100%;
+    }
+}
+
+/****************Responsive for Mobile*****************/
+@media (max-width:767px){
+    .col-1-mobile{
+        float: left;
+    }
+    .col-1-mobile{
+        width: 100%;
+    }
+}
+
+body{
+    background-color: lemonchiffon;
+}
+section{
+    position: relative;
+    margin: 20px;
+}
+
+section > h2 {                          /* Esto hace la pestaña del menú del lado superior derecho*/
+    position: absolute;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    text-align: center;
+}
+
+section > p{
+    padding: 20px 10px 10px 10px;
+}
+
+div > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 175%;
+}
+
+h2{
+    font-size: 125%;
+}
+
+section, section > h2{
+    border: 1px solid black;
+}
+
+#section-1, #section-2, #section-3{         /*Esto colorea el fondo del menú*/
+    background-color:ivory;
+}
+
+#section-1 > h2{                            /*Esto colorea la pestañas del menú*/
+    background-color: hotpink;
+}
+
+#section-2 > h2{
+    background-color: rgb(105, 255, 143);
+}
+
+#section-3 > h2{
+    background-color: rgb(59, 133, 182);
+}
